@@ -5377,7 +5377,11 @@ int main(int argc, char **argv)
     global_config->screenshots_enabled=FALSE;
     global_config->screenshots_include_cursor=FALSE;
     global_config->screenshots_include_statusbar=FALSE;
+#if 1 /* ZIPIT_Z2 */
+    global_config->control_system=TRUE;
+#else
     global_config->control_system=FALSE;
+#endif
     global_config->music_volume=MIX_MAX_VOLUME;
     for(i=0;i<10;i++)
         global_config->tracks_to_play[i]=FALSE;
