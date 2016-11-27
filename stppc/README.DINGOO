@@ -1,0 +1,40 @@
+This is a dynamically compiled port of stppc2x 1.1 to the Dingoo Linux.
+Source included.
+
+Installation:
+Simply copy the stppc directory somewhere on your filesystem and run the executable.
+
+Controls:
+
+Main menu:
+
+D-PAD		- select a game
+START		- run a selected game
+SELECT		- exit to system
+
+In-game:
+
+D-PAD		- move the cursor
+L/R		- decrease/increase digits
+A		- action #1
+B		- action #2
+X		- Insert a selected digit
+Y		- additional GUI features
+SELECT		- regenerate the level
+START		- launch game menu
+
+Game menu:
+
+A/B/Y		- select a menu item
+X		- save config
+L/R		- select save slot
+SELECT		- save to a selected slot
+START		- return to game
+
+Global:
+
+L+R		- go to the main menu
+
+________________________________________
+Compiled by Zear, release #1, 13/08/2009
+zeartul(at)gmail(dot)com
