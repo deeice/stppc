@@ -13,7 +13,8 @@ STRIP = echo
 #STRIP = strip
 UPX = echo
 #UPX = upx
-CFLAGS = -DCOMBINED -DSLOW_SYSTEM $(OPTIMISATION) -Wall $(DEBUG) -I/usr/include 
+#CFLAGS = -DCOMBINED -DSLOW_SYSTEM $(OPTIMISATION) -Wall $(DEBUG) -I/usr/include
+CFLAGS = -DCOMBINED -DSLOW_SYSTEM $(OPTIMISATION)
 #LDFLAGS = -lm -ldl -lSDL -lSDL_gfx -lSDL_ttf -lSDL_image -lSDL_mixer -lsmpeg -lmad 
 LDFLAGS = -lSDL_ttf -lSDL_mixer -lSDL_gfx -lSDL_image -lSDL
 
@@ -25,7 +26,7 @@ stppc2x: blackbox.o bridges.o combi.o cube.o dictionary.o divvy.o dominosa.o dra
 		maze3dc.o midend.o mines.o misc.o mosco.o net.o netslide.o pattern.o pegs.o \
 		random.o rect.o samegame.o sdl.o sixteen.o slant.o slide.o sokoban.o \
 		solo.o tents.o tree234.o twiddle.o unequal.o untangle.o version.o 
-	$(CPP) -o $@ blackbox.o bridges.o combi.o cube.o dictionary.o divvy.o dominosa.o drawing.o dsf.o \
+	$(CC) -o $@ blackbox.o bridges.o combi.o cube.o dictionary.o divvy.o dominosa.o drawing.o dsf.o \
 		fastevents.o fifteen.o filling.o flip.o galaxies.o grid.o guess.o inertia.o \
 		iniparser.o latin.o lightup.o list.o loopy.o malloc.o map.o maxflow.o maze3d.o \
 		maze3dc.o midend.o mines.o misc.o mosco.o net.o netslide.o pattern.o pegs.o \
